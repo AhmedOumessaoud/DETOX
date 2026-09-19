@@ -13,12 +13,13 @@ form?.addEventListener('submit', (event) => {
   const button = form.querySelector('button[type="submit"]');
   const previous = button.innerHTML;
   const data = new FormData(form);
-  const payment = 'الدفع قبل الاستلام';
+  const payment = 'الدفع قبل الاستلام - 1616 درهم';
   const message = [
     'السلام عليكم، أريد تأكيد طلب باقة AloeCurvy Detox 9 Days.',
     `الاسم: ${data.get('name')}`,
     `الهاتف: ${data.get('phone')}`,
     `العنوان: ${data.get('address')}`,
+    `الثمن: 1616 درهم`,
     `طريقة الدفع: ${payment}`,
   ].join('\n');
 
